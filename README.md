@@ -1,0 +1,1 @@
+# Scene-Aware-Physics-Inspired-Temporal-Modeling-for-Infrared-Gas-Video-Segmentation
