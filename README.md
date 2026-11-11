@@ -1,4 +1,4 @@
-# PSBG
+# PBG
 
 **Physics-Inspired Temporal Enhancement and Boundary-Aware Decoding for Infrared Gas Video Segmentation**
 
