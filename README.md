@@ -4,15 +4,6 @@
 
 PSBG is a framework for segmenting faint, semi-transparent gas plumes in infrared videos. It combines **Scene-aware Physics-inspired Temporal Enhancement (SPTE)** with a **Boundary-aware Gas Decoding Head (BGDH)** to integrate temporal evolution, scene memory, and boundary guidance. We evaluate PSBG on **SimGas** and **RIGVS**, our real-world infrared gas video dataset with pixel-level annotations.
 
-
-## Framework
-
-![Overall architecture of PSBG](assets/framework.png)
-
-Given a current frame and two historical frames, SPTE combines **Scene Memory (SM)** with **Physics-inspired Temporal Evolution (PITE)** to enhance the encoder input. Its scene-memory pathway uses references from the same video, without requiring a pre-acquired gas-free background image. A **MiT-B1** encoder extracts multi-scale features, and BGDH coordinates boundary-guided feature refinement with boundary-controlled logit diffusion to generate the segmentation map.
-
-The physics-inspired evolution operates in learned feature space; its outputs are not calibrated fluid parameters.
-
 ## Experimental Results
 
 ### Performance and Model Complexity
