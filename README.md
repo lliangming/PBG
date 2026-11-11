@@ -139,21 +139,6 @@ python tools/train.py --config configs/psbg_full.py --data-root ./data/gasvid --
 
 `--data-root` updates the training, validation, and test dataset paths. When switching datasets, also use a separate `--work-dir`. Relative paths are resolved from the working directory where the command is run.
 
-The default configuration includes:
-
-| Setting | Value |
-| --- | --- |
-| Input window | Current frame + two historical frames |
-| Temporal sampling stride | 5 ordered image positions |
-| Training iterations | 160,000 |
-| Optimizer | AdamW |
-| Base learning rate | `6e-5` |
-| Warmup iterations | 1,500 |
-| Validation and checkpoint interval | 10,000 iterations |
-| EMA decay | `0.999` |
-| Segmentation losses | OHEM cross-entropy + Dice |
-| Additional supervision | Boundary loss |
-
 See `configs/psbg_full.py` for the complete settings. Training saves `config.py`, logs, and checkpoints in the working directory.
 
 Resume training from a checkpoint:
