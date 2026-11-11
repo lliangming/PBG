@@ -4,7 +4,6 @@
 
 PSBG is a framework for segmenting faint, semi-transparent gas plumes in infrared videos. It combines **Scene-aware Physics-inspired Temporal Enhancement (SPTE)** with a **Boundary-aware Gas Decoding Head (BGDH)** to integrate temporal evolution, scene memory, and boundary guidance. We evaluate PSBG on **SimGas** and **RIGVS**, our real-world infrared gas video dataset with pixel-level annotations.
 
-> **Code availability:** The full-model training and evaluation code will be publicly released in this repository upon publication of the paper. The usage instructions below describe the forthcoming code release. Datasets, pretrained weights, training checkpoints, logs, and experimental outputs are not included in the source-code package.
 
 ## Framework
 
